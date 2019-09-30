@@ -171,3 +171,8 @@ li {
 #menu .fa-angle-right {
     float: right;
 }
+
+.cabecera_izq{
+    font-family: 'Poppins-Bold', sans-serif;
+    font-size: 25px;
+}
