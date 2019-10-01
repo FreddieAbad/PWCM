@@ -6,48 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CITIMOV</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css\styles.css">
     <link rel="stylesheet" href="./resources/ol.css">
     <link rel="stylesheet" href="resources/fontawesome-all.min.css">
     <link rel="stylesheet" href="./resources/ol3-layerswitcher.css">
     <link rel="stylesheet" href="./resources/qgis2web.css">
     <link rel="shortcut icon" href="Imagenes/Logo_Citmov.png">
+    <link rel="stylesheet" href="css\style_css.css">
 
     <style>
-        .search-layer {
+/*         .search-layer {
             top: 100px;
             left: .5em;
         }
-        
+
         .ol-touch .search-layer {
             top: 130px;
         }
-        
+
         .ol-control button {
             background-color: #f8f8f8 !important;
             color: #000000 !important;
             border-radius: 0px !important;
         }
-        
+
         .ol-zoom,
         .geolocate,
         .gcd-gl-control .ol-control {
             background-color: rgba(255, 255, 255, .4) !important;
             padding: 3px !important;
         }
-        
+
         .ol-scale-line {
             background: none !important;
         }
-        
+
         .ol-scale-line-inner {
             border: 2px solid #f8f8f8 !important;
             border-top: none !important;
             background: rgba(255, 255, 255, 0.5) !important;
             color: black !important;
         }
-        
+
         .tooltip {
             position: relative;
             background: rgba(0, 0, 0, 0.5);
@@ -57,18 +59,18 @@
             opacity: 0.7;
             white-space: nowrap;
         }
-        
+
         .tooltip-measure {
             opacity: 1;
             font-weight: bold;
         }
-        
+
         .tooltip-static {
             background-color: #ffcc33;
             color: black;
             border: 1px solid white;
         }
-        
+
         .tooltip-measure:before,
         .tooltip-static:before {
             border-top: 6px solid rgba(0, 0, 0, 0.5);
@@ -80,45 +82,57 @@
             margin-left: -7px;
             left: 50%;
         }
-        
+
         .tooltip-static:before {
             border-top-color: #ffcc33;
         }
-        
+
         .measure-control {
             top: 65px;
             left: .5em;
         }
-        
+
         .ol-touch .measure-control {
             top: 80px;
-        }
+        } */
+
         
-        .vertical-menu {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 12px;
-        }
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"><img src="Imagenes\Logo_Citmov.png" width="40" height="30" class="d-inline-block align-top" alt=""> CITMOV
-        </a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+        <h1 class="cabecera_izq">
+            Ciudad, Territorio y Movilidad
+        </h1>
+        <form class="form-inline ">
+            <a href="">
+                <img class="mr-2" src="images/espana.png" alt="Spanish Version" id="imagenIdioma">
+            </a>
+            <a href="">
+                <img class="mr-2" src="images/english.png" alt="Versión en Inglés" id="imagenIdioma">
+            </a>
+            <a id="btnLogin" class="btn btn-outline-success" href="login.html">
+                <i class="fas fa-user"></i>
+                Iniciar Sesión
+            </a>
+        </form>
     </nav>
     <div class="cuerpo">
         <div class="row">
             <div class="col-md-2 col-sm-2 col-lg-2 col-xl-2" id="barra-control">
                 <div class="vertical-menu">
-                    <a href="inicio.html">Inicio</a>
-                    <a data-toggle="collapse" href="#divVisorMapa" class="active"> Visor de mapas - Cuenca</a>
+                    <a href="inicio.html" class="itemLista" style="font-family: 'Poppins', sans-serif;">Inicio</a>
+                    <a href="index.html" class="active itemLista">Mapas</a>
+                    <a data-toggle="collapse" href="#divVisorMapa" class=" itemLista">Visor de
+                        mapas - Cuenca</a>
                     <div class="collapse" id="divVisorMapa">
                         <fieldset class="form-group">
                             <div class="row">
                                 <div class="col-sm-10 ml-5">
                                     <div class="form-check">
                                         <input input class="form-check-input" type="checkbox" id="gridCheck1">
-                                        <label class="form-check-label" for="gridCheck1">
+                                        <label class="form-check-label" for="gridCheck1" style="font-family: 'Poppins', sans-serif;">
                                             Limites Parroquias Rurales
                                         </label>
                                     </div>
@@ -181,21 +195,16 @@
                                         <div class="form-check">
                                             <input input class="form-check-input" type="checkbox" id="gridCheck5">
                                             <label class="form-check-label" for="gridCheck5">
-
-
-
-                                                
                                                 Microregional
                                             </label>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </fieldset>
                     </div>
-                    <a href="">Repositorio de mapas</a>
-                    <a data-toggle="collapse" href="#divVisorIndicadores">Indicadores</a>
+                    <a href="" class=" itemLista">Repositorio de mapas</a>
+                    <a data-toggle="collapse" href="#divVisorIndicadores" class="itemLista">Indicadores</a>
                     <div class="collapse" id="divVisorIndicadores">
                         <div class="col-sm-10 ml-5">
                             <div class="form-check">
@@ -272,17 +281,16 @@
                             </div>
                         </div>
                     </div>
-                    <a href="contactos.html">Contactos</a>
-                    <hr>
-                    <h5 class="ml-3"> Powered by:
-                    </h5>
-                    <div id="powered" class="ml-4">
-                        <a class="navbar-brand" href=""><img src="Imagenes\Logo_Citmov.png" width="80">
-                        </a>
-                        <a class="navbar-brand" href=""><img src="Imagenes\u_cuenca.png" width="170">
-                        </a>
+
+                    <a href="equipo.html" class="itemLista">Equipo</a>
+                    <a href="contactos.html" class="itemLista">Contactos</a>
+                    <a href="opiniones.html" class="itemLista">Opiniones</a>
+                    <div id="divLogos">
+                        <img src="Imagenes\Logo_Citmov.png" id="imgLogoCM">
+                        <img src="Imagenes\u_cuenca.png" id="imgLogoUC">
                     </div>
                 </div>
+
             </div>
             <div class="col-md-10 col-sm-10 col-lg-10 col-xl-10">
                 <div id="map">
@@ -291,15 +299,18 @@
                         <div id="popup-content"></div>
                     </div>
                 </div>
-                <!-- <div class="mapouter">
-                    <div class="gmap_canvas"><iframe width="1131" height="700" id="gmap_canvas" src="https://maps.google.com/maps?q=cuenca&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
-                </div> -->
             </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
     <script src="resources/qgis2web_expressions.js"></script>
     <script src="resources/polyfills.js"></script>

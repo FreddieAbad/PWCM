@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -9,13 +9,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css\styles.css">
+    <link rel="stylesheet" href="css\style_css.css">
     <script src="https://kit.fontawesome.com/2e43259a34.js"></script>
     <link rel="shortcut icon" href="Imagenes/Logo_Citmov.png">
     <link href="https://fonts.googleapis.com/css?family=Lora|Poppins&display=swap" rel="stylesheet">
     <style>
         body {
-            height: 100%;
-            overflow: hidden
+            /* height: 100%; */
+            overflow: hidden;
+            /* margin-right:0!important; */
         }
     </style>
 </head>
@@ -25,11 +27,14 @@
         <h1 class="cabecera_izq">
             Ciudad, Territorio y Movilidad
         </h1>
-
         <form class="form-inline ">
-            <a href=""><img class="mr-2" src="images/espana.png" alt="Spanish Version" style="width:40px"></a>
-            <a href=""><img class="mr-2" src="images/english.png" alt="Versión en Inglés" style="width:40px"></a>
-            <a class="btn btn-outline-success my-2 my-sm-0" href="login.html" style="font-family: 'Poppins', sans-serif;">
+            <a href="">
+                <img class="mr-2" src="images/espana.png" alt="Spanish Version" id="imagenIdioma">
+            </a>
+            <a href="">
+                <img class="mr-2" src="images/english.png" alt="Versión en Inglés" id="imagenIdioma">
+            </a>
+            <a id="btnLogin" class="btn btn-outline-success" href="login.html">
                 <i class="fas fa-user"></i>
                 Iniciar Sesión
             </a>
@@ -37,26 +42,16 @@
     </nav>
     <div class="cuerpo">
         <div class="row">
-            <div class="col-md-2 col-sm-2 col-lg-2 col-xl-2" id="barra-control">
+            <div class="col-md-2 col-sm-2 col-lg-2 col-xl-2 " id="barra-control">
                 <div class="vertical-menu">
-                    <a href="inicio.html" class="active" style="font-family: 'Poppins', sans-serif; padding-left: 25px;">Inicio</a>
-                    <a href="index.html" style="font-family: 'Poppins', sans-serif; padding-left: 25px;">Mapas</a>
-                    <a href="equipo.html" style="font-family: 'Poppins', sans-serif; padding-left: 25px;">Equipo</a>
-                    <a href="contactos.html" style="font-family: 'Poppins', sans-serif; padding-left: 25px;">Contactos</a>
-                    <a href="opiniones.html" style="font-family: 'Poppins', sans-serif; padding-left: 25px;">Opiniones</a>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <div id="powered" class="">
-                        <img src="Imagenes\Logo_Citmov.png"
-                            style="margin-left: 55px; margin-bottom: 20px;  width: 80px;">
-                        <br>
-                        <img src="Imagenes\u_cuenca.png" style="margin-left: 25px;  width: 170px;">
-
+                    <a href="inicio.html" class="active itemLista">Inicio</a>
+                    <a href="index.html" class="itemLista">Mapas</a>
+                    <a href="equipo.html" class="itemLista">Equipo</a>
+                    <a href="contactos.html" class="itemLista">Contactos</a>
+                    <a href="opiniones.html" class="itemLista">Opiniones</a>
+                    <div id="divLogos">
+                        <img src="Imagenes\Logo_Citmov.png" id="imgLogoCM">
+                        <img src="Imagenes\u_cuenca.png" id="imgLogoUC">
                     </div>
                 </div>
             </div>
@@ -69,14 +64,12 @@
                             <img src="Imagenes\Logo_Citmov.png" width="110">
                         </div>
                         <div id="cuerpo">
-                            <!-- <h3 class="text-center m-3">
-                                CITMOV
-                            </h3> -->
-                            <h1 class="text-center m-3" style="font-family: 'Poppins', sans-serif;">
+                            <h1 class="text-center m-2" id="tituloInicio">
                                 Comunidad Investigativa de <br> <strong>CIUDAD <span
                                         style="color: #D7B221">TERRITORIO</span> MOVILIDAD</strong></h1>
-                            <p class="text-justify" style="font-family: 'Lora', serif; color: #888888">La
-                                plataforma <span style="color: black; font-weight: bold; text-decoration: underline;">Geoportal Universitario CITMOV</span style="color: black; font-weight: bold, text-decoration: underline overline;">,
+                            <p class="text-justify" id="parrafoInicio">La
+                                plataforma <span id="parrafoInicioImp">Geoportal
+                                    Universitario CITMOV</span>,
                                 tiene la finalidad de
                                 garantizar
                                 el acceso y uso de la información geográfica básica de forma descentralizada, oportuna y
@@ -87,7 +80,7 @@
                                 optimizar recursos y no duplicar esfuerzos vinculando estándares y
                                 normas cartográficas geográficas (normas ISO y estándares de la Open Geospatial
                                 Consortium OGC).
-
+                                <br>
                                 Los datos geográficos publicados electrónicamente en el geoportal web aportarán
                                 principalmente a todos los investigadores universitarios, empresas públicas municipales
                                 asociadas, empresas
@@ -96,7 +89,6 @@
                                 de Ciudad, Territorio y Movilidad.</p>
                         </div>
                     </div>
-
                 </div>
                 <footer class="bg-dark text-light ">
                     <div class="row ">
@@ -105,31 +97,29 @@
                                 <div class="col-4"></div>
                                 <div class="col-2">
                                     <a target="_blank" href="https://www.facebook.com/cit.mov.92"><i
-                                            class="fab fa-facebook" style="color: #90A07E"></i></a>
+                                            class="fab fa-facebook" id="iconoFooter"></i></a>
                                 </div>
                                 <div class="col-2"><a target="_blank" href="https://citmovucuenca.com"><i
-                                            class="fas fa-globe" style="color: #90A07E"></i></a></div>
+                                            class="fas fa-globe" id="iconoFooter"></i></a></div>
                                 <div class="col-2"><a target="_blank" href="https://twitter.com/FreAbad"><i
-                                            class="fas fa-envelope" style="color: #90A07E "></i></a></div>
+                                            class="fas fa-envelope" id="iconoFooter"></i></a></div>
                                 <div class="col-4"></div>
-
                             </div>
-
                         </div>
                         <div class="col-6 mb-5">
-                            <div class="copyright" style="font-size: 11px; padding-top: 9px;">
-                                <h1 style="font-size: 15px" class="text-center">Investigación & Docencia <span
-                                        style="font-size: 10px;">© Copyright <strong>CITMOV - Universidad
+                            <div class="copyright" id="textoFooter">
+                                <h1 id="textoFooterInv">Investigación & Docencia <span style="font-size: 10px;">©
+                                        Copyright <strong>CITMOV - Universidad
                                             de Cuenca</strong> 2019 </span></h1>
-
-                                <hr style="color: rgb(255, 255, 255)">
-                                <h6 style="font-size: 10px" class="text-center">Desarrollo por <a target="_blank"
+                                <hr>
+                                <h6 id="textCuencaDev">Desarrollo por <a target="_blank"
                                         href="http://www.cuencadev.com/" style="color: #4CAF50"><strong>CUENCA
-                                            DEV</strong></a></h6 style="font-size: 10px">
+                                            DEV</strong></a></h6>
                             </div>
                         </div>
-                        <div class="col-3"></div>
+                        <!-- <div class="col-3"></div> -->
                     </div>
+                </footer>
             </div>
         </div>
     </div>
