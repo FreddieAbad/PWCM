@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE metadata SYSTEM "http://www.fgdc.gov/metadata/fgdc-std-001-1998.dtd">
+<metadata>
+	<idinfo>
+		<citation>
+			<citeinfo>
+				<origin>Municipalidad de Cuenca, asesoría Universidad del Azuay</origin>
+				<pubdate>Febrero / 2012</pubdate>
+				<title Sync="TRUE">LimitesParroquiasRuralesCuenca</title>
+				<geoform Sync="TRUE">vector digital data</geoform>
+				<onlink>\\ADMIN-PC\D$\metadatos pdot-cuenca\lineas.shp</onlink>
+				<ftname Sync="TRUE">LimitesParroquiasRuralesCuenca</ftname></citeinfo>
+		</citation>
+		<descript>
+			<abstract>Límite referencial del cantón Cuenca</abstract>
+			<purpose>Conocer el límite referencial del cantón Cuena</purpose>
+			<langdata Sync="TRUE">es</langdata></descript>
+		<timeperd>
+			<timeinfo>
+				<sngdate>
+					<caldate>Febrero / 2012</caldate>
+				</sngdate>
+			</timeinfo>
+			<current>publication date</current>
+		</timeperd>
+		<status>
+			<progress>Complete</progress>
+			<update>As needed</update>
+		</status>
+		<spdom>
+			<bounding>
+				<westbc Sync="TRUE">-79.673339</westbc>
+				<eastbc Sync="TRUE">-78.847415</eastbc>
+				<northbc Sync="TRUE">-2.495147</northbc>
+				<southbc Sync="TRUE">-3.175132</southbc>
+			</bounding>
+			<lboundng><leftbc Sync="TRUE">647498.229400</leftbc><rightbc Sync="TRUE">739220.201800</rightbc><bottombc Sync="TRUE">9648954.237200</bottombc><topbc Sync="TRUE">9724013.987900</topbc></lboundng></spdom>
+		<keywords>
+			<theme>
+				<themekt>Cuenca</themekt>
+				<themekey>límites</themekey>
+				<themekey>cantonal</themekey>
+			</theme>
+		</keywords>
+		<accconst>Se autoriza la reproducción total o parcial de la información con autorización de la Municipalidad de Cuenca</accconst>
+		<useconst>Se autoriza la reproducción total o parcial de la información con autorización de la Municipalidad de Cuenca</useconst>
+		<ptcontac>
+			<cntinfo>
+				<cntperp>
+				</cntperp>
+			</cntinfo>
+		</ptcontac>
+		<native Sync="TRUE">Microsoft Windows Vista Version 6.1 (Build 7601) Service Pack 1; ESRI ArcCatalog 9.3.0.1770</native>
+		<crossref>
+			<citeinfo>
+			</citeinfo>
+		</crossref>
+		<natvform Sync="TRUE">Shapefile</natvform></idinfo>
+	<dataqual>
+		<lineage>
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+					</citeinfo>
+				</srccite>
+				<typesrc>R</typesrc>
+				<srctime>
+					<srccurr>publication date</srccurr>
+				</srctime>
+				<srccontr>Fuente: Generado por la Ilustre Municipalidad de Cuenca</srccontr>
+			</srcinfo>
+			<procstep>
+				<procdesc>Metadata imported.</procdesc>
+				<srcused>D:\IERSE\metadatos\accesibilidad.xml</srcused>
+				<procdate>20120904</procdate>
+				<proctime>12014100</proctime>
+			</procstep>
+			<procstep><procdesc Sync="TRUE">Metadata imported.</procdesc><srcused Sync="TRUE">D:\IERSE\metadatos\area_no_definida_CantonCuenca_WGS84_7pIGM.xml</srcused><procdate Sync="TRUE">20120904</procdate><proctime Sync="TRUE">12042000</proctime></procstep></lineage>
+	</dataqual>
+	<spdoinfo>
+		<direct Sync="TRUE">Vector</direct>
+		<ptvctinf>
+			<sdtsterm Name="LimitesParroquiasRuralesCuenca">
+				<sdtstype Sync="TRUE">G-polygon</sdtstype>
+				<ptvctcnt Sync="TRUE">0</ptvctcnt>
+			</sdtsterm>
+			<esriterm Name="LimitesParroquiasRuralesCuenca"><efeatyp Sync="TRUE">Simple</efeatyp><efeageom Sync="TRUE">Polygon</efeageom><esritopo Sync="TRUE">FALSE</esritopo><efeacnt Sync="TRUE">0</efeacnt><spindex Sync="TRUE">FALSE</spindex><linrefer Sync="TRUE">FALSE</linrefer></esriterm></ptvctinf>
+	</spdoinfo>
+	<spref>
+		<horizsys>
+			<planar>
+				<planci>
+					<plance Sync="TRUE">coordinate pair</plance>
+					<coordrep>
+						<absres Sync="TRUE">0.000000</absres>
+						<ordres Sync="TRUE">0.000000</ordres>
+					</coordrep>
+					<plandu Sync="TRUE">meters</plandu>
+				</planci>
+				<gridsys><gridsysn Sync="TRUE">Universal Transverse Mercator</gridsysn><utm><utmzone Sync="TRUE">-17</utmzone><transmer><sfctrmer Sync="TRUE">0.999600</sfctrmer><longcm Sync="TRUE">-81.000000</longcm><latprjo Sync="TRUE">0.000000</latprjo><feast Sync="TRUE">500000.000000</feast><fnorth Sync="TRUE">10000000.000000</fnorth></transmer></utm></gridsys></planar>
+			<geodetic>
+				<horizdn Sync="TRUE">D_WGS_1984</horizdn>
+				<ellips Sync="TRUE">WGS_1984</ellips>
+				<semiaxis Sync="TRUE">6378137.000000</semiaxis>
+				<denflat Sync="TRUE">298.257224</denflat>
+			</geodetic>
+			<cordsysn><geogcsn Sync="TRUE">GCS_WGS_1984</geogcsn><projcsn Sync="TRUE">WGS_1984_UTM_Zone_17S</projcsn></cordsysn></horizsys>
+		<vertdef><altsys><altenc Sync="TRUE">Explicit elevation coordinate included with horizontal coordinates</altenc><altres Sync="TRUE">0.000100</altres></altsys></vertdef></spref>
+	<eainfo>
+		<detailed Name="LimitesParroquiasRuralesCuenca">
+			<enttyp>
+				<enttypl Sync="TRUE">LimitesParroquiasRuralesCuenca</enttypl>
+				<enttypt Sync="TRUE">Feature Class</enttypt><enttypc Sync="TRUE">0</enttypc></enttyp>
+			<attr><attrlabl Sync="TRUE">FID</attrlabl><attalias Sync="TRUE">FID</attalias><attrtype Sync="TRUE">OID</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale><attrdef Sync="TRUE">Internal feature number.</attrdef><attrdefs Sync="TRUE">ESRI</attrdefs><attrdomv><udom Sync="TRUE">Sequential unique whole numbers that are automatically generated.</udom></attrdomv></attr><attr>
+				<attrlabl>Shape</attrlabl>
+				<attrdef>Feature geometry.</attrdef>
+				<attrdefs>ESRI</attrdefs>
+				<attrdomv>
+					<udom>Coordinates defining the features.</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">Shape</attalias><attrtype Sync="TRUE">Geometry</attrtype><attwidth Sync="TRUE">0</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr><attrlabl Sync="TRUE">titulo</attrlabl><attalias Sync="TRUE">titulo</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">254</attwidth><attrdef>Descripción de la entidad</attrdef></attr><attr><attrlabl Sync="TRUE">Shape_Leng</attrlabl><attalias Sync="TRUE">Shape_Leng</attalias><attrtype Sync="TRUE">Float</attrtype><attwidth Sync="TRUE">19</attwidth><atnumdec Sync="TRUE">11</atnumdec></attr><attr><attrlabl Sync="TRUE">Shape_Area</attrlabl><attalias Sync="TRUE">Shape_Area</attalias><attrtype Sync="TRUE">Float</attrtype><attwidth Sync="TRUE">19</attwidth><attrdef Sync="TRUE">Area of feature in internal units squared.</attrdef><attrdefs Sync="TRUE">ESRI</attrdefs><attrdomv><udom Sync="TRUE">Positive real numbers that are automatically generated.</udom></attrdomv><atnumdec Sync="TRUE">11</atnumdec></attr></detailed>
+	</eainfo>
+	<distinfo>
+		<distrib>
+			<cntinfo>
+				<cntorgp>
+					<cntorg>POT Cantonal -- Municipalidad de Cuenca</cntorg>
+				</cntorgp>
+				<cntaddr>
+					<addrtype>physical address</addrtype>
+					<address>Bolívar y Borrero. Edificio "La Alcaldía", 6to Piso</address>
+				</cntaddr>
+				<cntvoice>072845499 Ext 655 o 679</cntvoice>
+			</cntinfo>
+		</distrib>
+		<resdesc>Downloadable Data</resdesc>
+		<stdorder>
+			<digform>
+				<digtinfo>
+					<transize>0.000</transize>
+					<dssize Sync="TRUE">0,000</dssize></digtinfo>
+			</digform>
+		</stdorder>
+	</distinfo>
+	<metainfo>
+		<metd Sync="TRUE">20150422</metd>
+		<metc>
+			<cntinfo>
+				<cntorgp>
+					<cntorg>Instituto de Estudios de Régimen Seccional del Ecuador - Universidad del Azuay</cntorg>
+					<cntper>Ing. Diego Pacheco</cntper>
+				</cntorgp>
+				<cntaddr>
+					<addrtype>physical address</addrtype>
+					<address>Av. 24 de Mayo 7-77 y Hernán Malo</address>
+					<city>Cuenca</city>
+					<state>Azuay</state>
+					<country>Ecuador</country>
+				</cntaddr>
+				<cntvoice>072814372</cntvoice>
+				<cntemail>dpacheco@uazuay.edu.ec</cntemail>
+			</cntinfo>
+		</metc>
+		<metstdn Sync="TRUE">FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+		<metstdv Sync="TRUE">FGDC-STD-001-1998</metstdv>
+		<mettc Sync="TRUE">local time</mettc>
+		<metextns>
+			<onlink>http://www.esri.com/metadata/esriprof80.html</onlink>
+			<metprof>ESRI Metadata Profile</metprof>
+		</metextns>
+		<metextns>
+			<onlink>http://www.esri.com/metadata/esriprof80.html</onlink>
+			<metprof>ESRI Metadata Profile</metprof>
+		</metextns>
+		<metextns>
+			<onlink>http://www.esri.com/metadata/esriprof80.html</onlink>
+			<metprof>ESRI Metadata Profile</metprof>
+		</metextns>
+		<metextns>
+			<onlink>http://www.esri.com/metadata/esriprof80.html</onlink>
+			<metprof>ESRI Metadata Profile</metprof>
+		</metextns>
+		<metextns>
+			<onlink>http://www.esri.com/metadata/esriprof80.html</onlink>
+			<metprof>ESRI Metadata Profile</metprof>
+		</metextns>
+		<metextns>
+			<onlink>http://www.esri.com/metadata/esriprof80.html</onlink>
+			<metprof>ESRI Metadata Profile</metprof>
+		</metextns>
+		<metextns>
+			<onlink>http://www.esri.com/metadata/esriprof80.html</onlink>
+			<metprof>ESRI Metadata Profile</metprof>
+		</metextns>
+		<metextns>
+			<onlink>http://www.esri.com/metadata/esriprof80.html</onlink>
+			<metprof>ESRI Metadata Profile</metprof>
+		</metextns>
+		<langmeta Sync="TRUE">es</langmeta><metextns><onlink Sync="TRUE">http://www.esri.com/metadata/esriprof80.html</onlink><metprof Sync="TRUE">ESRI Metadata Profile</metprof></metextns></metainfo>
+	<Esri><CreaDate>20190508</CreaDate><CreaTime>18063300</CreaTime><SyncOnce>FALSE</SyncOnce><SyncDate>20150422</SyncDate><SyncTime>10162700</SyncTime><ModDate>20150422</ModDate><ModTime>10162700</ModTime><DataProperties><lineage><Process ToolSource="C:\Program Files (x86)\ArcGIS\ArcToolbox\Toolboxes\Data Management Tools.tbx\CopyFeatures" Date="20130715" Time="095530">CopyFeatures C:\POT_CUENCA\MAPAS\mapa_general\limites\limite_canton_cuenca_utm_wgs84.shp C:\CONVENIO_INEC\GeoDataBase\Informacion_entrega.mdb\LIMITES\limite_canton_cuenca_utm_wgs84 # 0 0 0</Process><Process ToolSource="C:\Program Files (x86)\ArcGIS\ArcToolbox\Toolboxes\Data Management Tools.tbx\FeatureToPolygon" Date="20150319" Time="155630">FeatureToPolygon LimitesInterparroquiales;limite_canton_cuenca_PDOT_2011 "D:\PROYECTO LIMITES_06_2014\CONALI\TramosCorregidos\Limites_internos_ply8.shp" # ATTRIBUTES #</Process><Process ToolSource="C:\Program Files (x86)\ArcGIS\ArcToolbox\Toolboxes\Conversion Tools.tbx\FeatureClassToFeatureClass" Date="20150319" Time="155840">FeatureClassToFeatureClass "D:\PROYECTO LIMITES_06_2014\CONALI\TramosCorregidos\Limites_internos_ply8.shp" "D:\PROYECTO LIMITES_06_2014\CONALI\TramosCorregidos\LIMITES_FINALES.mdb\POLIGONOS" LimitesInterParroquialesRurales # "FID_limite 'FID_limite' true true false 9 Long 0 9 ,First,#,D:\PROYECTO LIMITES_06_2014\CONALI\TramosCorregidos\Limites_internos_ply8.shp,FID_limite,-1,-1;Entity 'Entity' true true false 16 Text 0 0 ,First,#,D:\PROYECTO LIMITES_06_2014\CONALI\TramosCorregidos\Limites_internos_ply8.shp,Entity,-1,-1;codigo 'codigo' true true false 50 Text 0 0 ,First,#,D:\PROYECTO LIMITES_06_2014\CONALI\TramosCorregidos\Limites_internos_ply8.shp,codigo,-1,-1;perimetro 'perimetro' true true false 19 Double 0 0 ,First,#,D:\PROYECTO LIMITES_06_2014\CONALI\TramosCorregidos\Limites_internos_ply8.shp,perimetro,-1,-1;area_hct 'area_hct' true true false 19 Double 0 0 ,First,#,D:\PROYECTO LIMITES_06_2014\CONALI\TramosCorregidos\Limites_internos_ply8.shp,area_hct,-1,-1;area 'area' true true false 19 Double 0 0 ,First,#,D:\PROYECTO LIMITES_06_2014\CONALI\TramosCorregidos\Limites_internos_ply8.shp,area,-1,-1;titulo 'titulo' true true false 254 Text 0 0 ,First,#,D:\PROYECTO LIMITES_06_2014\CONALI\TramosCorregidos\Limites_internos_ply8.shp,titulo,-1,-1;area_km2 'area_km2' true true false 19 Double 0 0 ,First,#,D:\PROYECTO LIMITES_06_2014\CONALI\TramosCorregidos\Limites_internos_ply8.shp,area_km2,-1,-1;Shape_Leng 'Shape_Leng' true true false 19 Double 0 0 ,First,#,D:\PROYECTO LIMITES_06_2014\CONALI\TramosCorregidos\Limites_internos_ply8.shp,Shape_Leng,-1,-1;Shape_Area 'Shape_Area' true true false 19 Double 0 0 ,First,#,D:\PROYECTO LIMITES_06_2014\CONALI\TramosCorregidos\Limites_internos_ply8.shp,Shape_Area,-1,-1" # "D:\PROYECTO LIMITES_06_2014\CONALI\TramosCorregidos\LIMITES_FINALES.mdb\POLIGONOS\LimitesInterParroquialesRurales"</Process><Process ToolSource="C:\Program Files (x86)\ArcGIS\ArcToolbox\Toolboxes\Conversion Tools.tbx\FeatureClassToFeatureClass" Date="20150422" Time="101628">FeatureClassToFeatureClass "D:\PROYECTO LIMITES_06_2014\CONALI\TramosCorregidos\LIMITES_FINALES.mdb\POLIGONOS\LimitesInterParroquialesRurales" "D:\PROYECTO LIMITES_06_2014\CONALI\SHAPES" LimitesParroquiasRuralesCuenca.shp # "titulo 'titulo' true true false 254 Text 0 0 ,First,#,D:\PROYECTO LIMITES_06_2014\CONALI\TramosCorregidos\LIMITES_FINALES.mdb\POLIGONOS\LimitesInterParroquialesRurales,titulo,-1,-1;Shape_Leng 'Shape_Length' false true true 8 Double 0 0 ,First,#,D:\PROYECTO LIMITES_06_2014\CONALI\TramosCorregidos\LIMITES_FINALES.mdb\POLIGONOS\LimitesInterParroquialesRurales,Shape_Length,-1,-1;Shape_Area 'Shape_Area' false true true 8 Double 0 0 ,First,#,D:\PROYECTO LIMITES_06_2014\CONALI\TramosCorregidos\LIMITES_FINALES.mdb\POLIGONOS\LimitesInterParroquialesRurales,Shape_Area,-1,-1" # "D:\PROYECTO LIMITES_06_2014\CONALI\SHAPES\LimitesParroquiasRuralesCuenca.shp"</Process><Process ToolSource="c:\program files (x86)\arcgis\desktop10.1\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20181005" Time="123934">CalculateField "Límite de las parroquias rurales" nombre_par "Cumbe" VB #</Process><Process ToolSource="c:\program files (x86)\arcgis\desktop10.1\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20181005" Time="123953">CalculateField "Límite de las parroquias rurales" nombre_par "Victoria del Portete" VB #</Process><Process ToolSource="c:\program files (x86)\arcgis\desktop10.1\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20181005" Time="124016">CalculateField "Límite de las parroquias rurales" nombre_par "Quingeo" VB #</Process><Process ToolSource="c:\program files (x86)\arcgis\desktop10.1\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20181005" Time="124031">CalculateField "Límite de las parroquias rurales" nombre_par "Tarqui" VB #</Process><Process ToolSource="c:\program files (x86)\arcgis\desktop10.1\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20181005" Time="124045">CalculateField "Límite de las parroquias rurales" nombre_par "Turi" VB #</Process></lineage></DataProperties><ArcGISFormat>1.0</ArcGISFormat></Esri><dataIdInfo><envirDesc Sync="TRUE">Microsoft Windows Vista Version 6.1 (Build 7601) Service Pack 1; ESRI ArcCatalog 9.3.0.1770</envirDesc><dataLang><languageCode Sync="TRUE" value="es"></languageCode></dataLang><idCitation><resTitle Sync="TRUE">LimitesParroquiasRuralesCuenca</resTitle><presForm><PresFormCd Sync="TRUE" value="005"></PresFormCd></presForm></idCitation><spatRpType><SpatRepTypCd Sync="TRUE" value="001"></SpatRepTypCd></spatRpType><dataExt><geoEle><GeoBndBox esriExtentType="native"><westBL Sync="TRUE">647498.2294</westBL><eastBL Sync="TRUE">739220.2018</eastBL><northBL Sync="TRUE">9724013.9879</northBL><southBL Sync="TRUE">9648954.2372</southBL><exTypeCode Sync="TRUE">1</exTypeCode></GeoBndBox></geoEle></dataExt><geoBox esriExtentType="decdegrees"><westBL Sync="TRUE">-79.673339</westBL><eastBL Sync="TRUE">-78.847415</eastBL><northBL Sync="TRUE">-2.495147</northBL><southBL Sync="TRUE">-3.175132</southBL><exTypeCode Sync="TRUE">1</exTypeCode></geoBox></dataIdInfo><mdLang><languageCode Sync="TRUE" value="es"></languageCode></mdLang><mdStanName Sync="TRUE">ISO 19115 Geographic Information - Metadata</mdStanName><mdStanVer Sync="TRUE">DIS_ESRI1.0</mdStanVer><mdChar><CharSetCd Sync="TRUE" value="004"></CharSetCd></mdChar><mdHrLv><ScopeCd Sync="TRUE" value="005"></ScopeCd></mdHrLv><mdHrLvName Sync="TRUE">dataset</mdHrLvName><distInfo><distributor><distorTran><onLineSrc><orDesc Sync="TRUE">002</orDesc><linkage Sync="TRUE">file://\\GAD-PQUEZADA\D$\PROYECTO LIMITES_06_2014\CONALI\SHAPES\LimitesParroquiasRuralesCuenca.shp</linkage><protocol Sync="TRUE">Local Area Network</protocol></onLineSrc><transSize Sync="TRUE">0,000</transSize></distorTran><distorFormat><formatName Sync="TRUE">Shapefile</formatName></distorFormat></distributor></distInfo><refSysInfo><RefSystem><refSysID><identCode Sync="TRUE">WGS_1984_UTM_Zone_17S</identCode></refSysID></RefSystem></refSysInfo><spatRepInfo><VectSpatRep><topLvl><TopoLevCd Sync="TRUE" value="001"></TopoLevCd></topLvl><geometObjs Name="LimitesParroquiasRuralesCuenca"><geoObjTyp><GeoObjTypCd Sync="TRUE" value="001"></GeoObjTypCd></geoObjTyp><geoObjCnt Sync="TRUE">0</geoObjCnt></geometObjs></VectSpatRep></spatRepInfo><mdDateSt Sync="TRUE">20150422</mdDateSt></metadata>

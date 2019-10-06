@@ -1,0 +1,30 @@
+Usuarios de transporte público que pagan más de una tarifa
+división del cantón Cuenca -  parroquias rurales
+rutas del transporte público del cantón  
+los medidores de luz de las parroquias rurales 
+tarifa del transporte público **** excel
+
+
+Nivel de accesibilidad al transporte público 
+la división del cantón Cuenca -  parroquias rurales
+rutas del transporte público 
+medidores de luz de las parroquias rurales
+
+
+
+
+Viajes con transbordos hacia el área urbana
+limite_parroquias_rurales 
+transporte_publico
+limite_parroquias_rurales 
+
+
+Edad del parque automotor del transporte público colectivo
+limite_parroquias_rurales 
+rutas del transporte público del cantón  
+año de fabricación de la flota de buses urbanos *** excel
+año de fabricación de la flota de buses interparroquiales  ** excel
+
+
+
+Frecuencia de paso del transporte público colectivo
