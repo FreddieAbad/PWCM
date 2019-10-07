@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -10,14 +10,14 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css\styles.css">
     <link rel="stylesheet" href="css\style_css.css">
-    <link rel="stylesheet" href="css\styles_login.css">
+    <link rel="stylesheet" href="css\styles_perfil.css">
     <script src="https://kit.fontawesome.com/2e43259a34.js"></script>
     <link rel="shortcut icon" href="Imagenes/Logo_Citmov.png">
     <link href="https://fonts.googleapis.com/css?family=Lora|Poppins&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
         <h1 class="cabecera_izq">
             Ciudad, Territorio y Movilidad
@@ -29,59 +29,53 @@
             <a href="">
                 <img class="mr-2" src="images/english.png" alt="Versión en Inglés" id="imagenIdioma">
             </a>
-            <!-- <a id="btnLogin" class="btn btn-outline-success" href="login.html">
+            <a id="btnLogin" class="btn btn-outline-success" href="login.html">
                 <i class="fas fa-user"></i>
                 Iniciar Sesión
-            </a> -->
+            </a>
         </form>
     </nav>
     <div class="cuerpo">
         <div class="row">
-            <div class="col-md-2 col-sm-2 col-lg-2 col-xl-2 vertical-menu" id="barra-control" style="padding: 0px;">
-                <a href="index.html" class="active itemLista" id="etiquetaMenu" >Inicio</a>
-                <a href="mapas.html" class="itemLista dropdown-toggle" id="etiquetaMenu" >Mapas</a>
-                <a href="equipo.html" class="itemLista" id="etiquetaMenu" >Equipo</a>
-                <a href="contactos.html" class="itemLista" id="etiquetaMenu" >Contactos</a>
-                <a href="opiniones.html" class="itemLista" id="etiquetaMenu" >Opiniones</a>
+            <div class="col-md-2 col-sm-2 col-lg-2 col-xl-2  vertical-menu" id="barra-control">
+                <a href="index.html" class="active itemLista" id="etiquetaMenu">Inicio</a>
+                <a href="mapas.html" class="itemLista dropdown-toggle" id="etiquetaMenu">Mapas</a>
+                <a href="equipo.html" class="itemLista" id="etiquetaMenu">Equipo</a>
+                <a href="contactos.html" class="itemLista" id="etiquetaMenu">Contactos</a>
+                <a href="opiniones.html" class="itemLista" id="etiquetaMenu">Opiniones</a>
                 <div id="divLogos">
                     <img src="Imagenes\Logo_Citmov.png" id="imgLogoCM">
                     <img src="Imagenes\u_cuenca.png" id="imgLogoUC">
                 </div>
             </div>
-            <div class="col-md-10 col-sm-10 col-lg-10 col-xl-10" style="padding: 0%" id="infoLogin">
+            <div class="col-md-10 col-sm-10 col-lg-10 col-xl-10">
+                <br>
                 <div class="row">
-                    <div class="col-md-8 col-sm-8 col-lg-8 col-xl-8 textPoppins">
-                        <br>
-                        <div class="row">
-                            <div class="col-4"></div>
-                            <div class="col-7">
-                                <div class="login">
-                                    <div id="imagen" class="text-center mb-5">
-                                        <img src="Imagenes\usuario.svg" class="img-rounded" alt="Logo Usuario"
-                                            style="width: 15%">
-                                    </div>
-                                    <div id="formularios " class="text-center">
-                                        <input type="text" class="form-control" placeholder="Usuario"
-                                            aria-label="Usuario" aria-describedby="basic-addon1">
-                                        <br>
-                                        <input type="password" class="form-control" placeholder="Contraseña"
-                                            aria-label="Contraseña" aria-describedby="basic-addon1">
-                                        <br>
-                                        <button type="button" class="btn btn-success mt-3 mb-3">Ingresar</button>
-                                        <br>
-                                        <button type="button" class="btn btn-danger mb-3"> <i
-                                                class="fab fa-google-plus-g"></i>
-                                            Ingresar mediante Google</button>
-                                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-9">
+                        <div id="cuerpo">
+                            <div id="imagenCitmov" class="text-center">
+                                <img src="Imagenes\Logo_Citmov.png" width="110">
+                            </div>
+                            <h1 class="text-center m-2" id="tituloInicio">
+                                Perfil </h1>
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="https://picsum.photos/id/1027/2848/4272" alt="" style="width: 50%"
+                                        class="imgOpinion">
+                                </div>
+                                <div class="col-9">
+                                    <h3 class="centrada titulo textPoppins">Arq. Nombre Apellido</h3>
+                                    <h5 class="centrada titulo textPoppins">Organizacion</h5>
+                                    <h6 class="textLora">Tipo Licencia: </h6>
+                                    <h6 class="textLora">Vigencia Licencia: </h6>
                                 </div>
                             </div>
-                            <div class="col-1"></div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-4 col-lg-4 col-xl-4">
-                    </div>
+                    <div class="col-2"></div>
                 </div>
-                <footer class="bg-dark text-light" id="pie">
+                <footer class="bg-dark text-light ">
                     <div class="row ">
                         <div class="col-3">
                             <div class="row pt-4">
@@ -108,11 +102,9 @@
                                             DEV</strong></a></h6>
                             </div>
                         </div>
-                        <div class="col-3"></div>
                     </div>
                 </footer>
             </div>
-
         </div>
     </div>
 

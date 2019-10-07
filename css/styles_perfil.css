@@ -1,0 +1,23 @@
+.textPoppins {
+    font-family: Poppins, sans-serif;
+}
+
+.textLora {
+    font-family: Lora, serif;
+}
+
+.imgOpinion {
+    border-radius: 10%;
+    /* text-align: center; */
+    display: block;
+    margin: 0 auto;
+}
+
+.titulo{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.centrada{
+    text-align: center;
+}
