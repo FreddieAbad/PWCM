@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -13,6 +13,13 @@
     <script src="https://kit.fontawesome.com/2e43259a34.js"></script>
     <link rel="shortcut icon" href="Imagenes/Logo_Citmov.png">
     <link href="https://fonts.googleapis.com/css?family=Lora|Poppins&display=swap" rel="stylesheet">
+    <style>
+        body {
+            /* height: 100%; */
+            overflow: hidden;
+            /* margin-right:0!important; */
+        }
+    </style>
 </head>
 
 <body>
@@ -35,164 +42,19 @@
     </nav>
     <div class="cuerpo">
         <div class="row">
-            <div class="col-md-2 col-sm-2 col-lg-2 col-xl-2" id="barra-control">
-                <div class="vertical-menu">
-                    <a href="inicio.html" class="itemLista" id="etiquetaMenu">Inicio</a>
-                    <a href="index.html" class="active itemLista dropdown-toggle" id="etiquetaMenu">Mapas</a>
-                    <a data-toggle="collapse" href="#divVisorMapa" class="itemLista dropdown-toggle"
-                        style="padding-left: 30px">Visor de
-                        mapas - Cuenca</a>
-                    <div class="collapse" id="divVisorMapa">
-                        <fieldset class="form-group">
-                            <div class="row">
-                                <div class="col-sm-10 ml-5">
-                                    <div class="form-check">
-                                        <input input class="form-check-input" type="checkbox" id="gridCheck1">
-                                        <label class="form-check-label" for="gridCheck1">
-                                            Limites Parroquias Rurales
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input input class="form-check-input" type="checkbox" id="gridCheck2">
-                                        <label class="form-check-label" for="gridCheck2">
-                                            Limites Parroquias Urbanas
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input input class="form-check-input" type="checkbox" id="gridCheck3">
-                                        <label class="form-check-label" for="gridCheck3">
-                                            Predios Rurales
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input input class="form-check-input" type="checkbox" id="gridCheck4">
-                                        <label class="form-check-label" for="gridCheck4">
-                                            Predios Urbanos
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input input class="form-check-input" type="checkbox" id="gridCheck6">
-                                        <label class="form-check-label" for="gridCheck6">
-                                            Medidores de luz urbano
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input input class="form-check-input" type="checkbox" id="gridCheck7">
-                                        <label class="form-check-label" for="gridCheck7">
-                                            Medidores de luz rurales
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input input class="form-check-input" type="checkbox" id="gridCheck8">
-                                        <label class="form-check-label" for="gridCheck8">
-                                            Indicadores
-                                        </label>
-                                    </div>
-                                    <a href="#divVisorRutasBus">Rutas de buses</a>
-                                    <div id="divVisorRutasBus">
-                                        <div class="form-check">
-                                            <input input class="form-check-input" type="checkbox" id="gridCheck5">
-                                            <label class="form-check-label" for="gridCheck5">
-                                                SIT
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input input class="form-check-input" type="checkbox" id="gridCheck5">
-                                            <label class="form-check-label" for="gridCheck5">
-                                                Urbano-Convencional
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input input class="form-check-input" type="checkbox" id="gridCheck5">
-                                            <label class="form-check-label" for="gridCheck5">
-                                                Interparroquial
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input input class="form-check-input" type="checkbox" id="gridCheck5">
-                                            <label class="form-check-label" for="gridCheck5">
-                                                Microregional
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </fieldset>
-                    </div>
-                    <a href="#divVisorIndicadores2" data-toggle="collapse" class="itemLista dropdown-toggle"
-                        style="padding-left: 30px">Repositorio de mapas</a>
-                    <div class="collapse" id="divVisorIndicadores2">
-                        <a href="#divVisorIndicadores2" data-toggle="collapse" class="itemLista"
-                            style="padding-left: 33px; background-color: #CCCCCC; hov">Usuarios de transporte público
-                            que pagan más de una
-                            tarifa</a>
-                        <a href="#divVisorIndicadores2" data-toggle="collapse" class="itemLista"
-                            style="padding-left: 33px; background-color: #CCCCCC;">Nivel de accesibilidad al transporte
-                            público</a>
-                        <a href="#divVisorIndicadores2" data-toggle="collapse" class="itemLista"
-                            style="padding-left: 33px; background-color: #CCCCCC;">Viajes con transbordos hacia el área
-                            urbana
-                        </a>
-                        <a href="#divVisorIndicadores2" data-toggle="collapse" class="itemLista"
-                            style="padding-left: 33px; background-color: #CCCCCC;">Edad del parque automotor del
-                            transporte público colectivo</a>
-                        <a href="#divVisorIndicadores2" data-toggle="collapse" class="itemLista"
-                            style="padding-left: 33px; background-color: #CCCCCC;">Frecuencia de paso del transporte
-                            público colectivo</a>
-                        <!-- <div class="col-sm-10 ml-5">
-                            <a href="#divVisorIndicadores2" data-toggle="collapse"
-                                class="itemLista dropdown-toggle">Usuarios de transporte público que pagan más de una
-                                tarifa</a>
-
-                            <div class="form-check">
-                                <input input class="form-check-input" type="checkbox" id="gridCheck1">
-                                <label class="form-check-label" for="gridCheck1">
-                                    Usuarios de transporte público que pagan más de una tarifa
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input input class="form-check-input" type="checkbox" id="gridCheck2">
-                                <label class="form-check-label" for="gridCheck2">
-                                    Nivel de accesibilidad al transporte público
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input input class="form-check-input" type="checkbox" id="gridCheck3">
-                                <label class="form-check-label" for="gridCheck3">
-                                    Viajes con transbordos hacia el área urbana
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input input class="form-check-input" type="checkbox" id="gridCheck4">
-                                <label class="form-check-label" for="gridCheck4">
-                                    Edad del parque automotor del transporte público colectivo
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input input class="form-check-input" type="checkbox" id="gridCheck4">
-                                <label class="form-check-label" for="gridCheck4">
-                                    Frecuencia de paso del transporte público colectivo
-                                </label>
-                            </div>
-                        </div> -->
-                    </div>
-                    <a href="equipo.html" class="itemLista" id="etiquetaMenu">Equipo</a>
-                    <a href="contactos.html" class="itemLista" id="etiquetaMenu">Contactos</a>
-                    <a href="opiniones.html" class="itemLista" id="etiquetaMenu">Opiniones</a>
-                    <div id="divLogos">
-                        <img src="Imagenes\Logo_Citmov.png" id="imgLogoCM">
-                        <img src="Imagenes\u_cuenca.png" id="imgLogoUC">
-                    </div>
+            <div class="col-md-2 col-sm-2 col-lg-2 col-xl-2  vertical-menu" id="barra-control">
+                <a href="index.html" class="active itemLista" id="etiquetaMenu">Inicio</a>
+                <a href="mapas.html" class="itemLista" id="etiquetaMenu">Mapas</a>
+                <a href="equipo.html" class="itemLista" id="etiquetaMenu">Equipo</a>
+                <a href="contactos.html" class="itemLista" id="etiquetaMenu">Contactos</a>
+                <a href="opiniones.html" class="itemLista" id="etiquetaMenu">Opiniones</a>
+                <div id="divLogos">
+                    <img src="Imagenes\Logo_Citmov.png" id="imgLogoCM">
+                    <img src="Imagenes\u_cuenca.png" id="imgLogoUC">
                 </div>
             </div>
             <div class="col-md-10 col-sm-10 col-lg-10 col-xl-10">
-
-                <!-- <div id="map">
-                    <div id="popup" class="ol-popup">
-                        <a href="#" id="popup-closer" class="ol-popup-closer"></a>
-                        <div id="popup-content"></div>
-                    </div>
-                </div> -->
+                <br>
                 <div class="row">
                     <div class="col-1"></div>
                     <div class="col-9">
@@ -209,173 +71,25 @@
                                 tiene la finalidad de
                                 garantizar
                                 el acceso y uso de la información geográfica básica de forma descentralizada, oportuna y
-                                estandarizada.
-                                A continuacion encontraran diversos mapas que evidencian los resultados obtenidos en
-                                nuestros estudios.
-                                Para desplazarte por nuestros mapas unicamente se debe navegar por la barra de control
-                                en la parte lateral derecha.
+                                estandarizada. La información presentada mediante servicios web de mapas aportará y
+                                fortalecerá a la Infraestructura de Datos Espaciales de la Universidad de Cuenca,
+                                posibilitando interoperabilidad e intercambio de geo-información, lo que
+                                propicia el desarrollo armónico de datos geográficos con elementos tecnológicos,
+                                optimizar recursos y no duplicar esfuerzos vinculando estándares y
+                                normas cartográficas geográficas (normas ISO y estándares de la Open Geospatial
+                                Consortium OGC).
                                 <br>
-                                <br>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <h6 id="subtituloEstudio">Usuarios de transporte público que pagan más de una
-                                            tarifa</h6>
-                                        <p id="cuerpoResumenEstudio">
-                                            <img src="Imagenes/usuario_1tarifa.jpg" alt="imagenProyecto"
-                                                id="imagenResumenEstudio">
-                                            <span id="subtitulo2ResumenEstudio">Descripcion</span>
-                                            <br>
-                                            El estudio analizó la cantidad de usuarios que lorem ipsum dolor sit amet
-                                            consectetur adipisicing elit. Deserunt
-                                            deleniti assumenda hic quasi dicta sint quam illo quisquam perferendis
-                                            provident? Voluptatum id molestias quidem quis odio! Magnam incidunt
-                                            voluptatem quo.
-                                            <br>
-                                            <span id="subtitulo2ResumenEstudio">Objetivos</span>
-                                            <br>
-                                            <ul id="cuerpoResumenEstudio">
-                                                <li>- Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-                                                    deleniti assumenda </li>
-                                                <li>- Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-                                                    deleniti assumenda </li>
-                                                <li>- Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-                                                    deleniti assumenda </li>
-                                            </ul>
-                                            <button class="btn btn-info mt-3 mb-3" id="botonCuerpoResumenEst">Ver
-                                                mas</button>
-                                        </p>
-                                    </div>
-                                    <div class="col-6">
-                                        <h6 id="subtituloEstudio">Nivel de accesibilidad al
-                                            transporte público</h6>
-                                        <p id="cuerpoResumenEstudio">
-                                            <img src="Imagenes/nivel_acc.jpg" alt="imagenProyecto"
-                                                id="imagenResumenEstudio">
-                                            <span id="subtitulo2ResumenEstudio">Descripcion</span>
-                                            <br>
-                                            El estudio analizó la cantidad de usuarios que lorem ipsum dolor sit amet
-                                            consectetur adipisicing elit. Deserunt
-                                            deleniti assumenda hic quasi dicta sint quam illo quisquam perferendis
-                                            provident? Voluptatum id molestias quidem quis odio! Magnam incidunt
-                                            voluptatem quo.
-                                            <br>
-                                            <span id="subtitulo2ResumenEstudio">Objetivos</span>
-                                            <br>
-                                            <ul id="cuerpoResumenEstudio">
-                                                <li>- Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-                                                    deleniti assumenda </li>
-                                                <li>- Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-                                                    deleniti assumenda </li>
-                                                <li>- Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-                                                    deleniti assumenda </li>
-                                            </ul>
-                                            <button class="btn btn-info mt-3 mb-3" id="botonCuerpoResumenEst">Ver
-                                                mas</button>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <h6 id="subtituloEstudio">Viajes con transbordos hacia
-                                            el área
-                                            urbana</h6>
-
-                                        <p id="cuerpoResumenEstudio">
-                                            <img src="Imagenes/viaje_trans.jpg" alt="imagenProyecto"
-                                                id="imagenResumenEstudio">
-                                            <span id="subtitulo2ResumenEstudio">Descripcion</span>
-                                            <br>
-                                            El estudio analizó la cantidad de usuarios que lorem ipsum dolor sit amet
-                                            consectetur adipisicing elit. Deserunt
-                                            deleniti assumenda hic quasi dicta sint quam illo quisquam perferendis
-                                            provident? Voluptatum id molestias quidem quis odio! Magnam incidunt
-                                            voluptatem quo.
-                                            <br>
-                                            <span id="subtitulo2ResumenEstudio">Objetivos</span>
-                                            <br>
-                                            <ul id="cuerpoResumenEstudio">
-                                                <li>- Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-                                                    deleniti assumenda </li>
-                                                <li>- Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-                                                    deleniti assumenda </li>
-                                                <li>- Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-                                                    deleniti assumenda </li>
-                                            </ul>
-                                            <button class="btn btn-info mt-3 mb-3" id="botonCuerpoResumenEst" style="background-color: #A71D25">Ver
-                                                mas</button>
-                                        </p>
-                                    </div>
-                                    <div class="col-6">
-                                        <h6 id="subtituloEstudio">Edad del parque automotor del
-                                            transporte público colectivo</h6>
-
-                                        <p id="cuerpoResumenEstudio">
-                                            <img src="Imagenes/edad_automotor.jpg" alt="imagenProyecto"
-                                                id="imagenResumenEstudio">
-                                            <span id="subtitulo2ResumenEstudio">Descripcion</span>
-                                            <br>
-                                            El estudio analizó la cantidad de usuarios que lorem ipsum dolor sit amet
-                                            consectetur adipisicing elit. Deserunt
-                                            deleniti assumenda hic quasi dicta sint quam illo quisquam perferendis
-                                            provident? Voluptatum id molestias quidem quis odio! Magnam incidunt
-                                            voluptatem quo.
-                                            <br>
-                                            <span id="subtitulo2ResumenEstudio">Objetivos</span>
-                                            <br>
-                                            <ul id="cuerpoResumenEstudio">
-                                                <li>- Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-                                                    deleniti assumenda </li>
-                                                <li>- Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-                                                    deleniti assumenda </li>
-                                                <li>- Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-                                                    deleniti assumenda </li>
-                                            </ul>
-                                            <button class="btn btn-info mt-3 mb-3" id="botonCuerpoResumenEst" style="background-color: #00235F">Ver
-                                                mas</button>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <h6 id="subtituloEstudio">Frecuencia de paso del
-                                            transporte
-                                            público colectivo</h6>
-
-                                        <p id="cuerpoResumenEstudio">
-                                            <img src="Imagenes/frecuencia_trans.jpeg" alt="imagenProyecto"
-                                                id="imagenResumenEstudio">
-                                            <span id="subtitulo2ResumenEstudio">Descripcion</span>
-                                            <br>
-                                            El estudio analizó la cantidad de usuarios que lorem ipsum dolor sit amet
-                                            consectetur adipisicing elit. Deserunt
-                                            deleniti assumenda hic quasi dicta sint quam illo quisquam perferendis
-                                            provident? Voluptatum id molestias quidem quis odio! Magnam incidunt
-                                            voluptatem quo.
-                                            <br>
-                                            <span id="subtitulo2ResumenEstudio">Objetivos</span>
-                                            <br>
-                                            <ul id="cuerpoResumenEstudio">
-                                                <li>- Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-                                                    deleniti assumenda </li>
-                                                <li>- Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-                                                    deleniti assumenda </li>
-                                                <li>- Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-                                                    deleniti assumenda </li>
-                                            </ul>
-                                            <button class="btn btn-info mt-3 mb-3" id="botonCuerpoResumenEst">Ver
-                                                mas</button>
-                                        </p>
-                                    </div>
-                                    <div class="col-6">
-
-                                    </div>
-                                </div>
-                            </p>
+                                Los datos geográficos publicados electrónicamente en el geoportal web aportarán
+                                principalmente a todos los investigadores universitarios, empresas públicas municipales
+                                asociadas, empresas
+                                privadas y ciudadanía en general, apoyando en todos los procesos que requieran
+                                información territorial de los proyectos desarrollados por la Comunidad investigativa
+                                de Ciudad, Territorio y Movilidad.</p>
                         </div>
                     </div>
                     <div class="col-2"></div>
                 </div>
-                <footer class="bg-dark text-light ">
+                <footer class="bg-dark text-light " >
                     <div class="row ">
                         <div class="col-3">
                             <div class="row pt-4">
@@ -408,6 +122,7 @@
             </div>
         </div>
     </div>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -417,8 +132,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-
-
 </body>
 
 </html>
