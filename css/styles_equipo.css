@@ -1,0 +1,22 @@
+.imgOpinion {
+    border-radius: 10%;
+    /* text-align: center; */
+    display: block;
+    margin: 0 auto;
+}
+
+.textPoppins {
+    font-family: Poppins, sans-serif;
+}
+
+.textLora {
+    font-family: Lora, serif;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.centrado {
+    text-align: center;
+}
