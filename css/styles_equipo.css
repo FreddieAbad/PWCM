@@ -20,9 +20,46 @@
 .centrado {
     text-align: center;
 }
-.justificado{
+
+.justificado {
     text-align: justify;
 }
-#iconoContactos{
+
+#iconoContactos3 {
     color: #4CAF50;
+}
+#iconoContactos2 {
+    color: #90A07E;
+}
+#iconoContactos1 {
+    color: #4F6A3E;
+}
+#linksExternos{
+    font-family: Poppins, sans-serif;
+    color: #4F6A3E;
+    text-decoration: underline ;
+    font-weight: bold;
+}
+li {
+    margin-left: 10px;
+    list-style-type: circle;
+ }
+
+
+.infoCarouselEquipo {
+    font-family: Poppins, sans-serif;
+    background: rgb(8, 8, 8);
+    background: rgba(8, 8, 8, 0.6);
+    border-radius: 25px;
+
+}
+
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+    padding: 5px;
+    border-radius: 5px;
+
 }
