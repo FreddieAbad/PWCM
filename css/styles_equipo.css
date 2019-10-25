@@ -20,3 +20,9 @@
 .centrado {
     text-align: center;
 }
+.justificado{
+    text-align: justify;
+}
+#iconoContactos{
+    color: #4CAF50;
+}

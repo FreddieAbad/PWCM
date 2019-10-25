@@ -76,8 +76,9 @@
                                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
                                                 placeholder="Ingresa tu mensaje"></textarea>
                                         </div>
-                                        <button type="submit" class="btn textPoppins"
-                                            id="botonEnviarCont" onclick="sendMail(); return false" style="background-color: #4CAF50;">Enviar</button>
+                                        <button type="submit" class="btn textPoppins" id="botonEnviarCont"
+                                            onclick="sendMail(); return false"
+                                            style="background-color: #4CAF50;">Enviar</button>
                                     </form>
                                 </div>
                                 <div class="col-md-2 col-sm-2 col-lg-2 col-xl-2"></div>
@@ -220,21 +221,20 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
     <script>
         function sendMail() {
-            var link = "mailto:freddy.abadl@ucuenca.ec"
-                + "&subject=" + escape("This is my subject")
-                + "&body=" + escape("fgdsf") /*document.getElementById('myText').value*/
-                ;
-           /*  window.location.href = link; */
+            var link = "mailto:freddy.abadl@ucuenca.ec" +
+                "&subject=" + escape("This is my subject") +
+                "&body=" + escape("fgdsf") /*document.getElementById('myText').value*/ ;
+            /*  window.location.href = link; */
         }
     </script>
 </body>
