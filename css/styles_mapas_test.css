@@ -5,6 +5,14 @@
 .textLora {
     font-family: Lora, serif;
 }
-.centrado{
+
+.centrado {
     text-align: center;
-  }
+}
+
+#botonCuerpoResumenEst{
+    border: none;
+}
+#botonCuerpoResumenEst:focus {
+    outline: none !important;
+}
