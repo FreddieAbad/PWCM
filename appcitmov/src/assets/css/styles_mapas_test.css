@@ -1,0 +1,18 @@
+.textPoppins {
+    font-family: Poppins, sans-serif;
+}
+
+.textLora {
+    font-family: Lora, serif;
+}
+
+.centrado {
+    text-align: center;
+}
+
+#botonCuerpoResumenEst{
+    border: none;
+}
+#botonCuerpoResumenEst:focus {
+    outline: none !important;
+}

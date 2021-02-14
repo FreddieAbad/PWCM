@@ -1,0 +1,114 @@
+<div class="cuerpo">
+    <div class="row">
+        <div class="col-md-2 col-sm-2 col-lg-2 col-xl-2  vertical-menu" id="barra-control">
+            <a routerLink="/"  class="active itemLista" id="etiquetaMenu">Inicio</a>
+            <a routerLink="/proyectos"  class="itemLista" id="etiquetaMenu">Proyectos</a>
+            <a routerLink="/mapas"  class="itemLista dropdown-toggle" id="etiquetaMenu">Mapas</a>
+            <a routerLink="/equipo"  class="itemLista" id="etiquetaMenu">Equipo</a>
+            <a routerLink="/contactos"  class="itemLista" id="etiquetaMenu">Contactos</a>
+            <a routerLink="/opiniones"  class="itemLista" id="etiquetaMenu">Opiniones</a>
+            <div id="divLogos">
+                <img src="assets/images/Logo_Citmov.png" id="imgLogoCM">
+                <img src="assets/images/u_cuenca.png" id="imgLogoUC">
+            </div>
+        </div>
+        <div class="col-md-10 col-sm-10 col-lg-10 col-xl-10" style="padding: 0%" >
+            <br>
+            <div class="row">
+                <div class="col-md-1 col-sm-1 col-lg-1 col-xl-1"></div>
+                <div class="col-md-9 col-sm-9 col-lg-9 col-xl-9">
+                    <div id="imagenCitmov" class="text-center">
+                        <img src="assets/images/Logo_Citmov.png" width="110">
+                    </div>
+                    <div id="cuerpo">
+                        <h1 class="text-center m-2" id="tituloInicio">
+                            Comunidad Investigativa de <br> <strong>CIUDAD <span
+                                    style="color: #D7B221">TERRITORIO</span> MOVILIDAD</strong></h1>
+                        <p class="text-justify" id="parrafoInicio">La
+                            plataforma <span id="parrafoInicioImp">Geoportal
+                                Universitario CITMOV</span>,
+                            tiene la finalidad de
+                            garantizar
+                            el acceso y uso de la información geográfica básica de forma descentralizada, oportuna y
+                            estandarizada. La información presentada mediante servicios web de mapas aportará y
+                            fortalecerá a la Infraestructura de Datos Espaciales de la Universidad de Cuenca,
+                            posibilitando interoperabilidad e intercambio de geo-información, lo que
+                            propicia el desarrollo armónico de datos geográficos con elementos tecnológicos,
+                            optimizar recursos y no duplicar esfuerzos vinculando estándares y
+                            normas cartográficas geográficas (normas ISO y estándares de la Open Geospatial
+                            Consortium OGC).
+                            <br>
+                            Los datos geográficos publicados electrónicamente en el geoportal aportarán
+                            principalmente a todos los investigadores universitarios, empresas públicas municipales
+                            asociadas, empresas
+                            privadas y ciudadanía en general, apoyando en todos los procesos que requieran
+                            información territorial de los proyectos desarrollados por la Comunidad Investigativa
+                            de Ciudad, Territorio y Movilidad.</p>
+                    </div>
+                    <owl-carousel-o [options]="customOptions">
+                        <ng-template carouselSlide>
+                          <div class="slide">
+                            <img src="https://via.placeholder.com/600/92c952" alt="img 1">
+                          </div>
+                        </ng-template>
+                        <ng-template carouselSlide>
+                          <div class="slide">
+                            <img src="https://via.placeholder.com/600/771796" alt="img 2">
+                          </div>
+                        </ng-template>
+                        <ng-template carouselSlide>
+                          <div class="slide">
+                            <img src="https://via.placeholder.com/600/24f355" alt="img 3">
+                          </div>
+                        </ng-template>
+                        <ng-template carouselSlide>
+                          <div class="slide">
+                            <img src="https://via.placeholder.com/600/d32776" alt="img 4">
+                          </div>
+                        </ng-template>
+                        <ng-template carouselSlide>
+                          <div class="slide">
+                            <img src="https://via.placeholder.com/600/f66b97" alt="img 5">
+                          </div>
+                        </ng-template>
+                        <ng-template carouselSlide>
+                          <div class="slide">
+                            <img src="https://via.placeholder.com/600/56a8c2" alt="img 6">
+                          </div>
+                        </ng-template>
+                      </owl-carousel-o>
+                </div>
+                <div class="col-md-2 col-sm-2 col-lg-2 col-xl-2"></div>
+            </div>
+            <footer class="bg-dark text-light textPoppins" >
+                <div class="row ">
+                    <div class="col-md-3 col-sm-3 col-lg-3 col-xl-3">
+                        <div class="row pt-4">
+                            <div class="col-md-4 col-sm-4 col-lg-4 col-xl-4"></div>
+                            <div class="col-md-2 col-sm-2 col-lg-2 col-xl-2">
+                                <a target="_blank" href="https://www.facebook.com/cit.mov.92"><i
+                                        class="fab fa-facebook" id="iconoFooter"></i></a>
+                            </div>
+                            <div class="col-md-2 col-sm-2 col-lg-2 col-xl-2"><a target="_blank" href="https://citmovucuenca.com"><i
+                                        class="fas fa-globe" id="iconoFooter"></i></a></div>
+                            <div class="col-md-2 col-sm-2 col-lg-2 col-xl-2"><a target="_blank" href="https://twitter.com/FreAbad"><i
+                                        class="fas fa-envelope" id="iconoFooter"></i></a></div>
+                            <div class="col-md-4 col-sm-4 col-lg-4 col-xl-4"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-6 mb-5">
+                        <div class="copyright" id="textoFooter">
+                            <h1 id="textoFooterInv">Investigación & Docencia <span style="font-size: 10px;">©
+                                    Copyright <strong>CITMOV - Universidad
+                                        de Cuenca</strong> 2019 </span></h1>
+                            <hr>
+                            <h6 id="textCuencaDev">Desarrollo por <a target="_blank"
+                                    href="http://www.cuencadev.com/" style="color: #4CAF50"><strong>CUENCA
+                                        DEV</strong></a></h6>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</div>
