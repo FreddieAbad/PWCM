@@ -1,0 +1,18 @@
+#lista_numerada {
+    list-style-type: upper-greek;
+    font-family: Poppins, sans-serif;
+    text-align: justify;
+}
+
+
+.textPoppins {
+    font-family: Poppins, sans-serif;
+}
+
+.textLora {
+    font-family: Lora, serif;
+}
+
+.centrado {
+    text-align: center;
+}
