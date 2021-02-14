@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Geoportal Universitario CITMOV</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css\styles.css">
+    <link rel="stylesheet" href="css\style_css.css">
+    <link rel="stylesheet" href="css\styles_mapas_test.css">
+    <script src="https://kit.fontawesome.com/2e43259a34.js"></script>
+    <link rel="shortcut icon" href="Imagenes/iconoCitmovB.png">
+    <link href="https://fonts.googleapis.com/css?family=Lora|Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between ">
+        <h1 class="cabecera_izq">
+            Ciudad, Territorio y Movilidad
+        </h1>
+        <form class="form-inline ">
+            <a id="btnLogin" class="btn btn-outline-success" href="login.html">
+                <i class="fas fa-user"></i>
+                Iniciar Sesión
+            </a>
+        </form>
+    </nav>
+    <div class="cuerpo">
+        <div class="row">
+            <div class="col-md-2 col-sm-2 col-lg-2 col-xl-2" id="barra-control">
+                <div class="vertical-menu">
+                    <a href="index.html" class="itemLista" id="etiquetaMenu">Inicio</a>
+                    <a href="proyectos.html" class="itemLista" id="etiquetaMenu">Proyectos</a>
+
+                    <a href="#divVisorIndicadores2" data-toggle="collapse" class="active itemLista dropdown-toggle"
+                        style="padding-left: 30px">Repositorio de mapas</a>
+                    <div class="collapse" id="divVisorIndicadores2">
+                        <a href="mapas_test1.html" class="itemLista"
+                            style="padding-left: 33px; background-color: #CCCCCC;">Usuarios de transporte público
+                            que pagan más de una
+                            tarifa</a>
+                        <a href="mapas_test2.html" class="itemLista"
+                            style="padding-left: 33px; background-color: #CCCCCC;">Nivel de accesibilidad al transporte
+                            público</a>
+                        <a href="mapas_test3.html" class="itemLista"
+                            style="padding-left: 33px; background-color: #CCCCCC;">Viajes con transbordos hacia el área
+                            urbana
+                        </a>
+                        <a href="mapas_test4.html" class="itemLista"
+                            style="padding-left: 33px; background-color: #CCCCCC;">Edad del parque automotor del
+                            transporte público colectivo</a>
+                        <a href="mapas_test5.html" class="itemLista"
+                            style="padding-left: 33px; background-color: #CCCCCC;">Frecuencia de paso del transporte
+                            público colectivo</a>
+                    </div>
+                    <a href="equipo.html" class="itemLista" id="etiquetaMenu">Equipo</a>
+                    <a href="contactos.html" class="itemLista" id="etiquetaMenu">Contactos</a>
+                    <a href="opiniones.html" class="itemLista" id="etiquetaMenu">Opiniones</a>
+                    <div id="divLogos">
+                        <img src="Imagenes\Logo_Citmov.png" id="imgLogoCM">
+                        <img src="Imagenes\u_cuenca.png" id="imgLogoUC">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10 col-sm-10 col-lg-10 col-xl-10" style="padding: 0%">
+
+
+                <div class="row">
+                    <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
+                    <div class="col-sm-9 col-md-9 col-lg-9 col-xl-9">
+                        <div id="imagenCitmov" class="text-center">
+                            <img src="Imagenes\Logo_Citmov.png" width="110"
+                                style="margin-top: 15px;margin-bottom: 15px; weight:100%;">
+                        </div>
+                        <div id="cuerpo">
+                            <h3 id="subtituloEstudio">Usuarios de transporte público que pagan más de una
+                                tarifa</h3>
+                            <div class="row">
+                                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                                    <img src="Imagenes/usuario_1tarifa.jpg" alt="imagenProyecto"
+                                        id="imagenResumenEstudio" style="weight:100%;">
+                                </div>
+                                <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                                    <p id="cuerpoResumenEstudio">
+                                        <span id="subtitulo2ResumenEstudio">Descripcion</span>
+                                        <br>
+                                        El estudio analizó la cantidad de usuarios que lorem ipsum dolor sit amet
+                                        consectetur adipisicing elit. Deserunt
+                                        deleniti assumenda hic quasi dicta sint quam illo quisquam perferendis
+                                        provident? Voluptatum id molestias quidem quis odio! Magnam incidunt
+                                        voluptatem quo.
+                                        <br>
+                                        <span id="subtitulo2ResumenEstudio">Objetivos</span>
+                                        <br>
+                                    <ul id="cuerpoResumenEstudio">
+                                        <li>- Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+                                            deleniti assumenda </li>
+                                        <li>- Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+                                            deleniti assumenda </li>
+                                        <li>- Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+                                            deleniti assumenda </li>
+                                    </ul>
+
+                                    </p>
+                                    <div id="tabla">
+                                        <span id="subtitulo2ResumenEstudio">Resultados</span>
+                                        <table class="table">
+                                            <thead class="thead-dark textPoppins centrado">
+                                                <tr>
+                                                    <th scope="col">Parroquia</th>
+                                                    <th scope="col">Total Medidores</th>
+                                                    <th scope="col">Una tarifa</th>
+                                                    <th scope="col">> Una tarifa</th>
+                                                    <th scope="col">> Una tarifa (%)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="textLora centrado">
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>Mark</td>
+                                                    <td>Otto</td>
+                                                    <td>@fat</td>
+                                                    <td>@mdo</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>Jacob</td>
+                                                    <td>Thornton</td>
+                                                    <td>@fat</td>
+                                                    <td>@fat</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td>Larry</td>
+                                                    <td>the Bird</td>
+                                                    <td>@fat</td>
+                                                    <td>@twitter</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <button class="btn btn-info mt-3 mb-3" id="botonCuerpoResumenEst"
+                                        style="background-color: #4CAF50;">Descargar
+                                        Resultados</button>
+
+                                    <button class="btn btn-info mt-3 mb-3" id="botonCuerpoResumenEst"
+                                        style="background-color: #4CAF50;"
+                                        onclick="window.open('MapasTemp/Qgis2Web/usuarios_trans_pub_mas_1_tarifa/index.html');">Mapa
+                                        3 Viajes con
+                                        Transbordo al Area Urbana</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+                </div>
+                <footer class="bg-dark text-light textPoppins">
+                    <div class="row ">
+                        <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                            <div class="row pt-4">
+                                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4"></div>
+                                <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                                    <a target="_blank" href="https://www.facebook.com/cit.mov.92"><i
+                                            class="fab fa-facebook" id="iconoFooter"></i></a>
+                                </div>
+                                <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2"><a target="_blank"
+                                        href="https://citmovucuenca.com"><i class="fas fa-globe"
+                                            id="iconoFooter"></i></a></div>
+                                <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2"><a target="_blank"
+                                        href="https://twitter.com/FreAbad"><i class="fas fa-envelope"
+                                            id="iconoFooter"></i></a></div>
+                                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4"></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 mb-5">
+                            <div class="copyright" id="textoFooter">
+                                <h1 id="textoFooterInv">Investigación & Docencia <span style="font-size: 10px;">©
+                                        Copyright <strong>CITMOV - Universidad
+                                            de Cuenca</strong> 2019 </span></h1>
+                                <hr>
+                                <h6 id="textCuencaDev">Desarrollo por <a target="_blank"
+                                        href="http://www.cuencadev.com/" style="color: #4CAF50"><strong>CUENCA
+                                            DEV</strong></a></h6>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

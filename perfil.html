@@ -23,7 +23,7 @@
             Ciudad, Territorio y Movilidad
         </h1>
         <form class="form-inline ">
-            
+
             <a id="btnLogin" class="btn btn-outline-error" href="login.html">
                 <i class="fas fa-user"></i>
                 Cerrar Sesión
@@ -35,16 +35,37 @@
             <div class="col-md-2 col-sm-2 col-lg-2 col-xl-2  vertical-menu" id="barra-control">
                 <a href="index.html" class="active itemLista" id="etiquetaMenu">Inicio</a>
                 <a href="proyectos.html" class="itemLista" id="etiquetaMenu">Proyectos</a>
-                <a href="mapas.html" class="itemLista dropdown-toggle" id="etiquetaMenu">Mapas</a>
+
+                <a href="#divVisorIndicadores2" data-toggle="collapse" class="itemLista dropdown-toggle"
+                    style="padding-left: 30px">Repositorio de mapas</a>
+                <div class="collapse" id="divVisorIndicadores2">
+                    <a href="mapas_test1.html" class="itemLista"
+                        style="padding-left: 33px; background-color: #CCCCCC;">Usuarios de transporte público
+                        que pagan más de una
+                        tarifa</a>
+                    <a href="mapas_test2.html" class="itemLista"
+                        style="padding-left: 33px; background-color: #CCCCCC;">Nivel de accesibilidad al transporte
+                        público</a>
+                    <a href="mapas_test3.html" class="itemLista"
+                        style="padding-left: 33px; background-color: #CCCCCC;">Viajes con transbordos hacia el área
+                        urbana
+                    </a>
+                    <a href="mapas_test4.html" class="itemLista"
+                        style="padding-left: 33px; background-color: #CCCCCC;">Edad del parque automotor del
+                        transporte público colectivo</a>
+                    <a href="mapas_test5.html" class="itemLista"
+                        style="padding-left: 33px; background-color: #CCCCCC;">Frecuencia de paso del transporte
+                        público colectivo</a>
+                </div>
                 <a href="equipo.html" class="itemLista" id="etiquetaMenu">Equipo</a>
                 <a href="contactos.html" class="itemLista" id="etiquetaMenu">Contactos</a>
                 <a href="opiniones.html" class="itemLista" id="etiquetaMenu">Opiniones</a>
-                <div id="divLogos" >
+                <div id="divLogos">
                     <img src="Imagenes\Logo_Citmov.png" id="imgLogoCM">
                     <img src="Imagenes\u_cuenca.png" id="imgLogoUC">
                 </div>
             </div>
-            <div class="col-md-10 col-sm-10 col-lg-10 col-xl-10" style="padding: 0%" >
+            <div class="col-md-10 col-sm-10 col-lg-10 col-xl-10" style="padding: 0%">
                 <br>
                 <div class="row">
                     <div class="col-1"></div>
@@ -57,8 +78,7 @@
                                 Perfil </h1>
                             <div class="row">
                                 <div class="col-3">
-                                    <img src="Imagenes\Enrique_Flores.jpg" alt="" style="width: 70%"
-                                        class="imgOpinion">
+                                    <img src="Imagenes\Enrique_Flores.jpg" alt="" style="width: 70%" class="imgOpinion">
                                 </div>
                                 <div class="col-9">
                                     <h3 class="centrada titulo textPoppins">Arq. Enrique Flores</h3>
@@ -114,6 +134,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    
 </body>
 
 </html>
