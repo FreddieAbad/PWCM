@@ -12,10 +12,30 @@
     <link rel="stylesheet" href="css\style_css.css">
     <link rel="stylesheet" href="css\styles_login.css">
     <script src="https://kit.fontawesome.com/2e43259a34.js"></script>
-    <link rel="shortcut icon" href="Imagenes/iconoCitmovB.png">
+    <link rel="shortcut icon" href="assets/images/iconoCitmovB.webp">
     <link href="https://fonts.googleapis.com/css?family=Lora|Poppins&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <style>
+        .sweet-warning {
+            background-color: #4CAF50;
+        }
 
+        .sweet-warning:not([disabled]):hover {
+            background-color: #90A07E;
+        }
+
+        .swal-title {
+            font-family: 'Poppins', sans-serif;
+            color: black;
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.21);
+        }
+
+        .swal-text {
+            font-family: 'Poppins', sans-serif;
+            color: #888888;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -23,7 +43,7 @@
         <h1 class="cabecera_izq">
             Ciudad, Territorio y Movilidad
         </h1>
-       
+
     </nav>
     <div class="cuerpo">
         <div class="row">
@@ -31,32 +51,32 @@
                 <a href="index.html" class="active itemLista" id="etiquetaMenu">Inicio</a>
                 <a href="proyectos.html" class="itemLista" id="etiquetaMenu">Proyectos</a>
                 <a href="#divVisorIndicadores2" data-toggle="collapse" class="itemLista dropdown-toggle"
-                        style="padding-left: 30px">Repositorio de mapas</a>
-                    <div class="collapse" id="divVisorIndicadores2">
-                        <a href="mapas_test1.html" class="itemLista"
-                            style="padding-left: 33px; background-color: #CCCCCC;">Usuarios de transporte público
-                            que pagan más de una
-                            tarifa</a>
-                        <a href="mapas_test2.html" class="itemLista"
-                            style="padding-left: 33px; background-color: #CCCCCC;">Nivel de accesibilidad al transporte
-                            público</a>
-                        <a href="mapas_test3.html" class="itemLista"
-                            style="padding-left: 33px; background-color: #CCCCCC;">Viajes con transbordos hacia el área
-                            urbana
-                        </a>
-                        <a href="mapas_test4.html" class="itemLista"
-                            style="padding-left: 33px; background-color: #CCCCCC;">Edad del parque automotor del
-                            transporte público colectivo</a>
-                        <a href="mapas_test5.html" class="itemLista"
-                            style="padding-left: 33px; background-color: #CCCCCC;">Frecuencia de paso del transporte
-                            público colectivo</a>
-                    </div>
-                    <a href="equipo.html" class="itemLista" id="etiquetaMenu">Equipo</a>
+                    style="padding-left: 30px">Repositorio de mapas</a>
+                <div class="collapse" id="divVisorIndicadores2">
+                    <a href="mapas_test1.html" class="itemLista"
+                        style="padding-left: 33px; background-color: #CCCCCC;">Usuarios de transporte público
+                        que pagan más de una
+                        tarifa</a>
+                    <a href="mapas_test2.html" class="itemLista"
+                        style="padding-left: 33px; background-color: #CCCCCC;">Nivel de accesibilidad al transporte
+                        público</a>
+                    <a href="mapas_test3.html" class="itemLista"
+                        style="padding-left: 33px; background-color: #CCCCCC;">Viajes con transbordos hacia el área
+                        urbana
+                    </a>
+                    <a href="mapas_test4.html" class="itemLista"
+                        style="padding-left: 33px; background-color: #CCCCCC;">Edad del parque automotor del
+                        transporte público colectivo</a>
+                    <a href="mapas_test5.html" class="itemLista"
+                        style="padding-left: 33px; background-color: #CCCCCC;">Frecuencia de paso del transporte
+                        público colectivo</a>
+                </div>
+                <a href="equipo.html" class="itemLista" id="etiquetaMenu">Equipo</a>
                 <a href="contactos.html" class="itemLista" id="etiquetaMenu">Contactos</a>
                 <a href="opiniones.html" class="itemLista" id="etiquetaMenu">Opiniones</a>
                 <div id="divLogos">
-                    <img src="Imagenes\Logo_Citmov.png" id="imgLogoCM">
-                    <img src="Imagenes\u_cuenca.png" id="imgLogoUC">
+                    <img src="assets/images\Logo_Citmov.webp" id="imgLogoCM">
+                    <img src="assets/images\u_cuenca.webp" id="imgLogoUC">
                 </div>
             </div>
             <div class="col-md-10 col-sm-10 col-lg-10 col-xl-10" style="padding: 0%" id="infoLogin">
@@ -139,17 +159,17 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-        <script>
-            window.onload = function anuncio() {
-                swal({
-                    title: "Demo CITMOV App Web",
-                    text: "El usuario para este demo es \"usuario\" y la contraseña  es \"usuario\"",
-                    buttons: {
-                        confirm: "Ok"
-                    }
-                });
-            }
-        </script>
+    <script>
+        window.onload = function anuncio() {
+            swal({
+                title: "Demo CITMOV App Web",
+                text: "El usuario para este demo es \"usuario\" y la contraseña  es \"usuario\"",
+                buttons: {
+                    confirm: { text: 'Ok', className: 'sweet-warning' },
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>

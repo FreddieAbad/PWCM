@@ -12,8 +12,30 @@
     <link rel="stylesheet" href="css\style_css.css">
     <link rel="stylesheet" href="css\styles_contactos.css">
     <script src="https://kit.fontawesome.com/2e43259a34.js"></script>
-    <link rel="shortcut icon" href="Imagenes/iconoCitmovB.png">
+    <link rel="shortcut icon" href="assets/images/iconoCitmovB.webp">
     <link href="https://fonts.googleapis.com/css?family=Lora|Poppins&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <style>
+        .sweet-warning {
+            background-color: #4CAF50;
+        }
+
+        .sweet-warning:not([disabled]):hover {
+            background-color: #90A07E;
+        }
+
+        .swal-title {
+            font-family: 'Poppins', sans-serif;
+            color: black;
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.21);
+        }
+
+        .swal-text {
+            font-family: 'Poppins', sans-serif;
+            color: #888888;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -22,7 +44,7 @@
             Ciudad, Territorio y Movilidad
         </h1>
         <form class="form-inline ">
-           
+
             <a id="btnLogin" class="btn btn-outline-success" href="login.html">
                 <i class="fas fa-user"></i>
                 Iniciar Sesión
@@ -35,7 +57,7 @@
                 <div class="vertical-menu">
                     <a href="index.html" class="itemLista" id="etiquetaMenu">Inicio</a>
                     <a href="proyectos.html" class="itemLista" id="etiquetaMenu">Proyectos</a>
-                    
+
                     <a href="#divVisorIndicadores2" data-toggle="collapse" class="itemLista dropdown-toggle"
                         style="padding-left: 30px">Repositorio de mapas</a>
                     <div class="collapse" id="divVisorIndicadores2">
@@ -61,8 +83,8 @@
                     <a href="contactos.html" class="active itemLista" id="etiquetaMenu">Contactos</a>
                     <a href="opiniones.html" class="itemLista" id="etiquetaMenu">Opiniones</a>
                     <div id="divLogos">
-                        <img src="Imagenes\Logo_Citmov.png" id="imgLogoCM">
-                        <img src="Imagenes\u_cuenca.png" id="imgLogoUC">
+                        <img src="assets/images\Logo_Citmov.webp" id="imgLogoCM">
+                        <img src="assets/images\u_cuenca.webp" id="imgLogoUC">
                     </div>
                 </div>
             </div>
@@ -72,7 +94,7 @@
                     <div class="col-md-1 col-sm-1 col-lg-1 col-xl-1"></div>
                     <div class="col-md-9 col-sm-9 col-lg-9 col-xl-9">
                         <div id="imagenCitmov" class="text-center">
-                            <img src="Imagenes\Logo_Citmov.png" width="110">
+                            <img src="assets/images\Logo_Citmov.webp" width="110">
                         </div>
                         <div id="cuerpo">
                             <div class="row">
@@ -93,9 +115,8 @@
                                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
                                                 placeholder="Ingresa tu mensaje"></textarea>
                                         </div>
-                                        <button type="submit" class="btn textPoppins" id="botonEnviarCont"
-                                            onclick="sendMail(); return false"
-                                            style="background-color: #4CAF50;">Enviar</button>
+                                        <a class="btn textPoppins" id="botonEnviarCont" onclick="enviar_correo()"
+                                            style="background-color: #4CAF50;">Enviar</a>
                                     </form>
                                 </div>
                                 <div class="col-md-2 col-sm-2 col-lg-2 col-xl-2"></div>
@@ -114,12 +135,12 @@
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-lg-6 col-xl-6">
                                     <p class="centrada">
-                                        <h4 class="textPoppins titulo">CITMOV</h4>
-                                        <h6 class="textPoppins titulo">Universidad de Cuenca</h6>
-                                        <h6 class="textPoppins centrada">Cuenca - Ecuador</h6>
-                                        <h6 class="textPoppins centrada">Av. 12 de Abril y Av. Loja </h6>
-                                        <br>
-                                        <h6 class="textPoppins centrada">(593-07) 405 1000 ext. 2101</h6>
+                                    <h4 class="textPoppins titulo">CITMOV</h4>
+                                    <h6 class="textPoppins titulo">Universidad de Cuenca</h6>
+                                    <h6 class="textPoppins centrada">Cuenca - Ecuador</h6>
+                                    <h6 class="textPoppins centrada">Av. 12 de Abril y Av. Loja </h6>
+                                    <br>
+                                    <h6 class="textPoppins centrada">(593-07) 405 1000 ext. 2101</h6>
                                     </p>
                                 </div>
                             </div>
@@ -127,7 +148,7 @@
                             <h3 class="textPoppins titulo">Contactos</h3>
                             <br>
                             <div class="row">
-                                <div class="col-md-6 col-sm-12 col-lg-4 col-xl-4">
+                                <div class="col-md-6 col-sm-12 col-lg-6 col-xl-6">
                                     <p class="textLora">
                                         <span class="centrada subtituloEquipo">Arq. Enrique Flores Juca, Mg.</span>
                                         <br>
@@ -140,7 +161,7 @@
                                         <br>
                                     </p>
                                 </div>
-                                <div class="col-md-6 col-sm-12 col-lg-4 col-xl-4">
+                                <div class="col-md-6 col-sm-12 col-lg-6 col-xl-6">
                                     <p class="textLora">
                                         <span class="centrada subtituloEquipo">Arq. Estefanía Mora Arias, Mg.</span>
                                         <br>
@@ -153,10 +174,11 @@
                                         <br>
                                     </p>
                                 </div>
-                                
+
                             </div>
                             <div class="row">
-                                <div class="col-md-6 col-sm-12 col-lg-4 col-xl-4">
+
+                                <div class="col-md-6 col-sm-12 col-lg-6 col-xl-6">
                                     <p class="textLora">
                                         <span class="centrada subtituloEquipo">Arq. Jessica Chica Carmona</span>
                                         <br>
@@ -169,7 +191,7 @@
                                         <br>
                                     </p>
                                 </div>
-                                <div class="col-md-6 col-sm-12 col-lg-4 col-xl-4">
+                                <div class="col-md-6 col-sm-12 col-lg-6 col-xl-6">
                                     <p class="textLora">
                                         <span class="centrada subtituloEquipo">Arq. Estefanía Chuiza Inca</span>
                                         <br>
@@ -181,11 +203,11 @@
                                         Teléfono: (593-07) 405 1000 ext. 2101
                                         <br>
                                     </p>
-                                </div> 
+                                </div>
                                 <div class="col-md-2 col-sm-2 col-lg-2 col-xl-2"></div>
                             </div>
                             <div class="row">
-                                <div class="col-md-6 col-sm-12 col-lg-4 col-xl-4">
+                                <div class="col-md-6 col-sm-12 col-lg-4 col-xl-6">
                                     <p class="textLora">
                                         <span class="centrada subtituloEquipo">Arq. Sebastián Auquilla Clavijo,
                                             Mg.</span>
@@ -241,19 +263,39 @@
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
+        </script>
     <script>
-        function sendMail() {
-            var link = "mailto:freddy.abadl@ucuenca.ec" +
-                "&subject=" + escape("This is my subject") +
-                "&body=" + escape("fgdsf") /*document.getElementById('myText').value*/ ;
-            /*  window.location.href = link; */
+      
+        function enviar_correo() {
+            var correo = document.getElementById("exampleInputEmail1").value;
+            var mensaje = document.getElementById("exampleFormControlTextarea1").value;
+            var t_correo = correo.includes("@");
+            if (t_correo && mensaje.length > 0) {
+                swal({
+                    title: "Correo Enviado!",
+                    text: " Hemos enviado tu mensaje!",
+                    icon: "success",
+                    buttons: {
+                        confirm: { text: 'Ok', className: 'sweet-warning' },
+                    }
+
+                });
+            } else {
+                swal({
+                    title: "Error al enviar correo",
+                    text: " Reintentar la acción",
+                    icon: "warning",
+                    buttons: {
+                        confirm: { text: 'Ok', className: 'sweet-warning' },
+                    }
+                });
+            }
         }
     </script>
 </body>
